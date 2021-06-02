@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.GuesspaperFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relativebacground"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/background_modify">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="GuessPapers"
+            android:padding="4dp"
+            android:textSize="22sp"
+            android:textColor="@color/colorWhite"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        >
+
+        <TextView
+            android:id="@+id/selectBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         android:layout_alignStart="@id/SelectBranchForGuesspaper"
+            android:text="Select Branch"/>
+
+        <Spinner
+            android:id="@+id/SelectBranchForGuesspaper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_below="@id/selectBranch"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_selector"
+            android:spinnerMode="dropdown"/>
+
+
+
+
+     <!--   <TextView
+            android:id="@+id/selectSem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+          android:layout_alignStart="@id/SelectSemForGuesspaper"
+           android:layout_below="@id/SelectBranchForGuesspaper"
+            android:text="Select Semester"/>
+
+
+        <Spinner
+            android:id="@+id/SelectSemForGuesspaper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/selectSem"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_selector"
+            android:spinnerMode="dropdown" />
+
+
+
+        <TextView
+            android:id="@+id/selectUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+          android:layout_below="@id/SelectSemForGuesspaper"
+           android:layout_alignStart="@id/SelectUnitForGuesspaper"
+            android:text="Select Unit"/>
+
+        <Spinner
+            android:id="@+id/SelectUnitForGuesspaper"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@id/selectUnit"
+            android:background="@drawable/spinner_selector"
+            android:spinnerMode="dropdown" />
+
+
+              !-->
+
+
+        <Button
+            android:id="@+id/btnViewGuesspapers"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@color/colorBottomNavigation"
+            android:text="View "
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "967568743934",
+    "project_id": "collegeadmin-28340",
+    "storage_bucket": "collegeadmin-28340.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967568743934:android:ad5e61a9c25e3e00b2f4af",
+        "android_client_info": {
+          "package_name": "com.arpit.collegeadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967568743934-bn8ljqb5uj5v7h2r15nf0tk7o017keeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWA6Rk7XeNqo0i__0pQfPULmYV37z6ZF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967568743934-bn8ljqb5uj5v7h2r15nf0tk7o017keeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967568743934:android:30977831cf1eec66b2f4af",
+        "android_client_info": {
+          "package_name": "com.arpit.collegeuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967568743934-bn8ljqb5uj5v7h2r15nf0tk7o017keeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWA6Rk7XeNqo0i__0pQfPULmYV37z6ZF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967568743934-bn8ljqb5uj5v7h2r15nf0tk7o017keeb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

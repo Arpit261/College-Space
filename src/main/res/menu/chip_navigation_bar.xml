@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:cnb_iconColor="#FFFFFF" />
+
+
+    <item
+        android:id="@+id/notice"
+        android:enabled="true"
+        android:icon="@drawable/ic_notice"
+        android:title="Notice"
+
+        app:cnb_iconColor="#FFFFFF" />
+
+    <item
+        android:id="@+id/Notes"
+        android:enabled="true"
+        android:icon="@drawable/ic_notes"
+        android:title="Notes"
+        app:cnb_iconColor="#FFFFFF" />
+
+    <item
+        android:id="@+id/guessPaper"
+        android:enabled="true"
+        android:icon="@drawable/ic_guesspaper"
+        android:title="Guesspaper"
+        app:cnb_iconColor="#FFFFFF" />
+
+    <item
+        android:id="@+id/Assignment"
+        android:enabled="true"
+        android:icon="@drawable/ic_assignment"
+        android:title="Assignment"
+        app:cnb_iconColor="#FFFFFF" />
+
+
+</menu>
