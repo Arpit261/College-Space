@@ -2,43 +2,45 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:elevation="15dp">
+   android:layout_marginTop="7dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:elevation="15dp">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageDocs"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:layout_centerVertical="true"
             android:src="@drawable/ic_docs" />
 
         <TextView
             android:id="@+id/guesspaperTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="15dp"
-            android:layout_toRightOf="@id/imageDocs"
+            android:layout_marginEnd="68dp"
+            android:layout_toEndOf="@id/imageDocs"
             android:text="Hello Gueesspaper"
             android:textColor="#000000"
-            android:textSize="22sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/textUnit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/guesspaperTitle"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
             android:layout_toEndOf="@id/imageDocs"
             android:text="Unit 1"
             android:textColor="#3449BD"
-            android:textSize="18sp" />
+            android:textSize="15sp" />
 
         <ImageView
             android:id="@+id/download_guesspaper"
@@ -50,6 +52,7 @@
             android:src="@drawable/ic_download" />
 
         <ImageView
+            android:id="@+id/shareDocs"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_below="@id/download_guesspaper"

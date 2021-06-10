@@ -35,6 +35,7 @@ class ViewdataActivity : AppCompatActivity() {
     private var getUnitforAssignment = ""
 
     private var getBranchForGuesspapers = ""
+    private var getSemforGuesspaper=""
 
     private var getBranchForClassNotes = ""
     private var getSemForNotes = ""
@@ -52,7 +53,7 @@ class ViewdataActivity : AppCompatActivity() {
         getSemForNotes = intent.getStringExtra("NotesSem").toString()
 
         getBranchForGuesspapers = intent.getStringExtra("GuessBranch").toString()
-
+        getSemforGuesspaper=intent.getStringExtra("GuessSem").toString()
 
         recyclerView = findViewById(R.id.recyclerViewData)
 
@@ -134,8 +135,11 @@ class ViewdataActivity : AppCompatActivity() {
 
     private fun getGuessPapersFromFireStore() {
 
-        db.collection("GuessPapers").document(getBranchForGuesspapers)
-                .collection("Sem").document()
+        db.collection("GuessPapers")
+                .document(getBranchForGuesspapers)
+                .collection("Sem")
+                .document(getSemforGuesspaper)
+                .collection("data")
                 .get()
                 .addOnSuccessListener {
 

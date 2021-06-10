@@ -2,7 +2,7 @@ package com.arpit.collegeuser.Model
 
 data class NoticeModel(val Imageurl:String="",val date:String="",val time:String="",val Branch:String="") {}
 
-data class guesspaper(val docsTittle:String = "",val DocsUrl:String="",val DocsUnit:String="") {}
+data class guesspaper(val docsName:String = "",val DocsUrl:String="",val DocsUnit:String="") {}
 
 data class classNotes(val PdfUrl:String="",val PdfUnit:String="",val PdfName:String="") {}
 

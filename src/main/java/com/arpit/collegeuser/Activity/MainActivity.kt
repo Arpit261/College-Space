@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         openHome()
+        openDefault()
 
         bottom_menu.setOnItemSelectedListener(object : ChipNavigationBar.OnItemSelectedListener {
             override fun onItemSelected(id: Int) {
@@ -27,6 +28,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+    }
+
+    fun openDefault(){
+        bottom_menu.setItemSelected(R.id.home,true)
     }
 
     private fun openGuesspaper() {

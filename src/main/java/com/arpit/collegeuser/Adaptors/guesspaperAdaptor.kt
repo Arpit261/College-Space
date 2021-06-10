@@ -26,8 +26,16 @@ class guesspaperAdaptor(val context: Context, private val itemList: ArrayList<gu
 
     override fun onBindViewHolder(holder: GuesspaperViewHolder, position: Int) {
         val text = itemList[position]
-        holder.title.text = text.docsTittle
-        holder.unit.text= text.DocsUnit
+        holder.title.text = text.docsName
+        holder.unit.text= "Unit ${text.DocsUnit}"
+
+        holder.imgShare.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type="text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT,"Checkout this Document ,${itemList[position].DocsUrl}")
+            val chooser = Intent.createChooser(intent,"Share this Document to...")
+            context.startActivity(chooser)
+        }
 
         holder.imgDownload.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
@@ -40,5 +48,6 @@ class guesspaperAdaptor(val context: Context, private val itemList: ArrayList<gu
         val title: TextView = view.findViewById(R.id.guesspaperTitle)
         val imgDownload: ImageView = view.findViewById(R.id.download_guesspaper)
         val unit:TextView = view.findViewById(R.id.textUnit)
+        val imgShare:ImageView=view.findViewById(R.id.shareDocs)
     }
 }

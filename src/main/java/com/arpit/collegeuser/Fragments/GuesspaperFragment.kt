@@ -23,9 +23,8 @@ class GuesspaperFragment : Fragment() {
     var sem = ""
     var unit = ""
     lateinit var spinner1: Spinner
-
      lateinit var spinner2: Spinner
-    //lateinit var spinner3: Spinner
+
     private lateinit var arrayAdaptor: ArrayAdapter<String>
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -35,14 +34,12 @@ class GuesspaperFragment : Fragment() {
 
         spinner1 = view.findViewById(R.id.SelectBranchForGuesspaper)
          spinner2 = view.findViewById(R.id.SelectSemForGuesspaper)
-        //spinner3 = view.findViewById(R.id.SelectUnitForGuesspaper)
 
         button = view.findViewById(R.id.btnViewGuesspapers)
         button.setOnClickListener {
             val bundle = Bundle()
             bundle.putString("GuessBranch", branch)
-            //    bundle.putString("GuessSem", sem)
-            //  bundle.putString("GuessUnit", unit)
+             bundle.putString("GuessSem", sem)
             val intent = Intent(activity as Context, ViewdataActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
