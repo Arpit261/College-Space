@@ -6,7 +6,9 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.arpit.collegeuser.Model.classNotes
 import com.arpit.collegeuser.R
@@ -23,24 +25,38 @@ class ClassNotesAdaptor(val context: Context, val itemList: ArrayList<classNotes
     }
 
     override fun onBindViewHolder(holder: NotesViewHolder, position: Int) {
-
         val text = itemList[position]
-        holder.title.text = text.pdfTitle
+        holder.title.text = text.PdfName
+        holder.pdfUnit.text = "Unit ${text.PdfUnit}"
 
-        holder.title.setOnClickListener {
+       /* holder.cardNotes.setOnClickListener {
+            val intent = Intent(context ,PdfActivity::class.java)
+            intent.putExtra("pdfUrl", itemList[position].PdfUrl)
+            context.startActivity(intent)
+        }
+
+        */
+        holder.downloadPdf.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(itemList[position].PdfUrl)
             context.startActivity(intent)
         }
 
-    }
+        holder.sharePdf.setOnClickListener {
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type="text/plain"
+            intent.putExtra(Intent.EXTRA_TEXT,"Checkout this Pdf ,${itemList[position].PdfUrl}")
+            val chooser = Intent.createChooser(intent,"PDFS")
+            context.startActivity(chooser)
 
+        }
+    }
 
     class NotesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val title: TextView = view.findViewById(R.id.textNotes)
-
+        val title: TextView = view.findViewById(R.id.pdfname)
+        val pdfUnit: TextView = view.findViewById(R.id.pdfUnit)
+        val downloadPdf: ImageView = view.findViewById(R.id.downloadPdf)
+        val sharePdf:ImageView=view.findViewById(R.id.share)
 
     }
-
-
 }

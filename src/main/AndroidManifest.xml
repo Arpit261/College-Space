@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.ViewClassNotes"></activity>
-        <activity android:name=".Activity.viewGuessPaper" />
-        <activity android:name=".Activity.ViewAssignmentActivity" />
+        <activity android:name=".Activity.LoginActivity"></activity>
+        <activity android:name=".Activity.Full_Image_view" />
+        <activity android:name=".Activity.ViewdataActivity" />
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -11,55 +11,64 @@
         android:layout_height="45dp"
         android:background="@drawable/background_modify">
 
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Notes"
             android:padding="4dp"
-            android:textSize="22sp"
-            android:textColor="@color/colorWhite"/>
-
-
-
+            android:text="Notes"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
 
     </RelativeLayout>
-
-
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
-        >
+        android:layout_marginTop="70dp">
 
-    <TextView
-        android:id="@+id/selectBranch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/SelectBranchForNotes"
-        android:text="Select Branch"/>
+        <TextView
+            android:id="@+id/selectBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/SelectBranchForNotes"
+            android:text="Select Branch" />
 
-    <Spinner
-        android:id="@+id/SelectBranchForNotes"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        <Spinner
+            android:id="@+id/SelectBranchForNotes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/selectBranch"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_selector"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-        android:layout_below="@id/selectBranch"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/spinner_selector"
-        android:spinnerMode="dropdown"/>
+        <TextView
+            android:id="@+id/selectSem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SelectBranchForNotes"
+            android:layout_alignStart="@id/SelectSemesterForNotes"
+            android:layout_marginTop="15dp"
+            android:text="Select Semester" />
 
+        <Spinner
+            android:id="@+id/SelectSemesterForNotes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/selectSem"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/spinner_selector"
+            android:spinnerMode="dropdown" />
 
         <Button
             android:id="@+id/btnViewNotes"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
+           android:layout_below="@id/SelectSemesterForNotes"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="22dp"
             android:background="@drawable/round_button"
@@ -67,8 +76,6 @@
             android:text="View "
             android:textColor="@color/colorWhite"
             android:textSize="18sp" />
-
-
 
     </RelativeLayout>
 

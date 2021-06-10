@@ -2,7 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <item
         android:id="@+id/home"
         android:enabled="true"
@@ -10,13 +9,11 @@
         android:title="Home"
         app:cnb_iconColor="#FFFFFF" />
 
-
     <item
         android:id="@+id/notice"
         android:enabled="true"
         android:icon="@drawable/ic_notice"
         android:title="Notice"
-
         app:cnb_iconColor="#FFFFFF" />
 
     <item
@@ -39,6 +36,5 @@
         android:icon="@drawable/ic_assignment"
         android:title="Assignment"
         app:cnb_iconColor="#FFFFFF" />
-
 
 </menu>

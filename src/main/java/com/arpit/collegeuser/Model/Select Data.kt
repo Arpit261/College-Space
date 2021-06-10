@@ -1,7 +1,5 @@
 package com.arpit.collegeuser.Model
 
-
-
 val  SelectBranch = arrayListOf("Computer Science", "Electrical", "Civil", "Mechanical")
 
 val  SelectSem = arrayListOf("First Sem","Second Sem","Third Sem","Fourth Sem","Fifth Sem","Sixth Sem","Seventh Sem","Eight Sem" )

@@ -1,16 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:layout_marginTop="6dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="15dp">
 
-
-    <ImageView
-        android:id="@+id/imageViewNotice"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:src="@mipmap/ic_launcher_round"/>
+        android:layout_height="match_parent">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/txtupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Uploaded From :"
+           android:layout_toEndOf="@id/logo_image"
+            android:layout_marginStart="40dp"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/branchName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txtupdate"
+            android:layout_marginStart="8dp"
+            android:text="Name"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/txtupdate"
+            android:text="Date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="at"
+            android:textSize="16sp"
+            android:layout_marginStart="120dp"
+            android:layout_below="@id/txtupdate"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/date"
+            android:textSize="16sp"
+          android:layout_below="@id/txtupdate"
+            android:text="time" />
+
+        <ImageView
+            android:id="@+id/imageViewNotice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/view"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/logo_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+         android:layout_marginTop="12dp"
+            android:src="@drawable/logo"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#4A4A4A"
+            android:layout_below="@id/date"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -6,16 +6,16 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.arpit.collegeuser.Model.guesspaper
 import com.arpit.collegeuser.R
 
 
-class guesspaperAdaptor(val context: Context, private val itemList:ArrayList<guesspaper>):RecyclerView.Adapter<guesspaperAdaptor.GuesspaperViewHolder>() {
+class guesspaperAdaptor(val context: Context, private val itemList: ArrayList<guesspaper>) : RecyclerView.Adapter<guesspaperAdaptor.GuesspaperViewHolder>() {
 
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuesspaperViewHolder{
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GuesspaperViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.single_guesspaper_fragment, parent, false)
         return GuesspaperViewHolder(view)
     }
@@ -27,21 +27,18 @@ class guesspaperAdaptor(val context: Context, private val itemList:ArrayList<gue
     override fun onBindViewHolder(holder: GuesspaperViewHolder, position: Int) {
         val text = itemList[position]
         holder.title.text = text.docsTittle
+        holder.unit.text= text.DocsUnit
 
-        holder.title.setOnClickListener {
+        holder.imgDownload.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
             intent.data = Uri.parse(itemList[position].DocsUrl)
             context.startActivity(intent)
         }
-
     }
-
 
     class GuesspaperViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val title: TextView = view.findViewById(R.id.guesspaperTitle)
-
-
-
-
+        val imgDownload: ImageView = view.findViewById(R.id.download_guesspaper)
+        val unit:TextView = view.findViewById(R.id.textUnit)
     }
 }

@@ -3,4 +3,14 @@
     <string name="home">Home</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutArya">Arya Institute of Engineering Technology and Management(AIETM) has the best possible industry contacts, the finest of faculty and a
+    stimulating learning environment.It is a catalyst for new ideas, concepts, and skills. To attain
+    its objectives, AIETM ensures that its every student emerges as a total professional i.e. as one
+    with a distinct individuality to lead and galvanize the process of change and transformation in
+    the 21st century.College has been making genuine and ample efforts for enhancing the employability skills of the students.
+</string>
+    <string name="computerDesc">Computer Science and Engineering is the scientific and practical approach to computation and its applications.</string>
+    <string name="electricalDesc">Electrical Engineering is a field of engineering that generally deals with the study and applications of electricity,electronics and electromagnetism.</string>
+    <string name="mechDesc">Mechanical Engineering is a creative discipline that grows upon a number of basics and optimizes the devices,machines,processes and systems that involve mechanical forces, work and energy.</string>
+    <string name="civilDesc">Civil engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment. </string>
 </resources>

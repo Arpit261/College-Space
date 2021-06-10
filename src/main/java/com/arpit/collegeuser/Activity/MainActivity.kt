@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        openHome()
 
         bottom_menu.setOnItemSelectedListener(object : ChipNavigationBar.OnItemSelectedListener {
             override fun onItemSelected(id: Int) {
@@ -23,16 +24,9 @@ class MainActivity : AppCompatActivity() {
                     R.id.notice -> openNotice()
                     R.id.Assignment -> openAssignment()
                     R.id.guessPaper -> openGuesspaper()
-
-
                 }
-
             }
-
-
         })
-
-
     }
 
     private fun openGuesspaper() {
@@ -41,7 +35,6 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         supportActionBar?.title = "Guesspaper"
     }
-
 
     private fun openAssignment() {
         supportFragmentManager.beginTransaction()
@@ -69,7 +62,5 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.frameLayout, HomeFragment())
                 .commit()
         supportActionBar?.title = "Home"
-
     }
-
 }

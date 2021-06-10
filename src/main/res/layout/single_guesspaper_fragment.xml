@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="15dp">
 
-
-    <androidx.cardview.widget.CardView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:elevation="15dp"
-        android:layout_margin="15dp">
-
+        android:layout_height="80dp"
+        android:elevation="15dp">
 
         <ImageView
-            android:id="@+id/imagePdf"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_gravity="center_vertical"
+            android:id="@+id/imageDocs"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
             android:src="@drawable/ic_docs" />
-
 
         <TextView
             android:id="@+id/guesspaperTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="25dp"
-            android:text="Hello"
-
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/imageDocs"
+            android:text="Hello Gueesspaper"
             android:textColor="#000000"
             android:textSize="22sp" />
 
@@ -34,21 +32,32 @@
             android:id="@+id/textUnit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/guesspaperTitle"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/imageDocs"
             android:text="Unit 1"
-          android:textSize="22sp"
-            android:layout_marginStart="150dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#3449BD" />
+            android:textColor="#3449BD"
+            android:textSize="18sp" />
 
         <ImageView
-            android:layout_width="35sp"
-            android:layout_height="35sp"
+            android:id="@+id/download_guesspaper"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_download" />
 
-            android:src="@drawable/ic_download"
-            android:layout_gravity="end|center_vertical"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/download_guesspaper"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_share" />
 
+    </RelativeLayout>
 
-    </androidx.cardview.widget.CardView>
-
-</RelativeLayout>
+</androidx.cardview.widget.CardView>
