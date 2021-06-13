@@ -86,7 +86,7 @@
             android:background="@drawable/spinner_selector"
             android:spinnerMode="dropdown" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnViewAssignment"
             android:layout_width="150dp"
             android:layout_height="wrap_content"

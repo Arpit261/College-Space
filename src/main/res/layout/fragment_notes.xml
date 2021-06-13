@@ -64,7 +64,7 @@
             android:background="@drawable/spinner_selector"
             android:spinnerMode="dropdown" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnViewNotes"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="22dp"
             android:background="@drawable/round_button"
-            android:backgroundTint="@color/colorBottomNavigation"
+             android:backgroundTint="@color/colorBottomNavigation"
             android:text="View "
             android:textColor="@color/colorWhite"
             android:textSize="18sp" />

@@ -54,8 +54,7 @@
             android:layout_height="match_parent"
             android:layout_below="@id/view"
             android:layout_marginTop="1dp"
-            android:scaleType="fitXY"
-            android:src="@mipmap/ic_launcher_round" />
+            android:scaleType="fitXY" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -67,7 +66,6 @@
             android:src="@drawable/logo"
             app:civ_border_width="2dp"
             app:civ_border_color="#FFFFFF"/>
-
 
     </RelativeLayout>
 

@@ -11,11 +11,37 @@
         android:layout_height="wrap_content"
         tools:context=".Fragments.HomeFragment">
 
+        <RelativeLayout
+            android:id="@+id/relativebacground"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/background_modify">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:text="Home"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_github"
+                android:layout_marginRight="25dp"/>
+        </RelativeLayout>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+           android:layout_marginTop="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
             app:cardCornerRadius="6dp">
 
             <com.smarteist.autoimageslider.SliderLayout
@@ -28,7 +54,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="190dp">
+            android:layout_marginTop="230dp">
 
             <TextView
                 android:id="@+id/txtabout"
@@ -48,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtabout"
                 android:layout_marginStart="12sp"
-                android:layout_marginTop="15sp"
+                android:layout_marginTop="12sp"
                 android:layout_marginEnd="5dp"
                 android:elegantTextHeight="true"
                 android:text="@string/aboutArya"
@@ -88,10 +114,6 @@
                 android:textColor="@color/colorBottomNavigation"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
-
-
-
         </RelativeLayout>
 
     </FrameLayout>
