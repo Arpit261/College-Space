@@ -19,10 +19,10 @@ It is kind of application where admin can upload their documents to the firestor
 3. Upload Department Notice (Select from both Camera and Gallery)
 4. Upload Assignment
 
-<img src="https://user-images.githubusercontent.com/57999276/121891504-2440f980-cd39-11eb-94e6-0d0a6aa788d0.png" width="210"/><img src="https://user-images.githubusercontent.com/57999276/121892181-07f18c80-cd3a-11eb-97e5-2382b620ec4c.png" width="210"/><img src="https://user-images.githubusercontent.com/57999276/121892310-34a5a400-cd3a-11eb-800c-d5436fa35b11.png" width="210"/>
+<img src="https://user-images.githubusercontent.com/57999276/121891504-2440f980-cd39-11eb-94e6-0d0a6aa788d0.png" width="250"/><img src="https://user-images.githubusercontent.com/57999276/121892181-07f18c80-cd3a-11eb-97e5-2382b620ec4c.png" width="250"/><img src="https://user-images.githubusercontent.com/57999276/121892310-34a5a400-cd3a-11eb-800c-d5436fa35b11.png" width="250"/>
 
 🔸After Uploadation from the admin, Now user can read all the documents that the admin can upload to the firestore.
-<img src="https://user-images.githubusercontent.com/57999276/121893935-2bb5d200-cd3c-11eb-9315-ae9d6085dbc1.png" width="210"/><img src="https://user-images.githubusercontent.com/57999276/121893743-f6a97f80-cd3b-11eb-9453-2a583d0cf2df.png" width="210"/><img src="https://user-images.githubusercontent.com/57999276/121893882-1c368900-cd3c-11eb-9bf9-b36d5782df35.png" width="210"/>
+<img src="https://user-images.githubusercontent.com/57999276/121893935-2bb5d200-cd3c-11eb-9315-ae9d6085dbc1.png" width="250"/><img src="https://user-images.githubusercontent.com/57999276/121893743-f6a97f80-cd3b-11eb-9453-2a583d0cf2df.png" width="250"/><img src="https://user-images.githubusercontent.com/57999276/121893882-1c368900-cd3c-11eb-9bf9-b36d5782df35.png" width="250"/>
 
 # Contribution
 If you found any type of issue in this application please create a new issue and if you would like to contribute you are welcome.❤
