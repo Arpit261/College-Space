@@ -5,9 +5,11 @@ It is kind of application where admin can upload their documents to the firestor
 # ✔Working
 
 🔸Firstly admin and user have to register to the app with the help of Google Signup API.
- <img src="https://user-images.githubusercontent.com/57999276/121889635-1e4a1900-cd37-11eb-9765-94c743adaba9.png" width="350"/> <img src="https://user-images.githubusercontent.com/57999276/121889658-23a76380-cd37-11eb-8938-c2e2d905c01c.png" width="350"/>
+
+ <img src="https://user-images.githubusercontent.com/57999276/121889635-1e4a1900-cd37-11eb-9765-94c743adaba9.png" width="350"/><img src="https://user-images.githubusercontent.com/57999276/121889658-23a76380-cd37-11eb-8938-c2e2d905c01c.png" width="350"/>
 
 🔸After Successful registration now the admin & user can access all the functionality and upload & read their data from Firestore.
+
 <img width="350" src="https://user-images.githubusercontent.com/57999276/121890874-72a1c880-cd38-11eb-9de3-32cda1f30f2a.png"><img width="350" src="https://user-images.githubusercontent.com/57999276/121893090-3328ab80-cd3b-11eb-806e-54a4e1b16d21.png">
 
 # 📌Functionality
